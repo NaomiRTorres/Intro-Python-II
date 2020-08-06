@@ -4,8 +4,7 @@ from item import Item
 # Declare all the rooms
 
 room = {
-    'outside':  Room("Outside Cave Entrance",
-                     "North of you, the cave mount beckons"),
+    'outside':  Room("Outside Cave Entrance", "North of you, the cave mount beckons"),
 
     'foyer':    Room("Foyer", """Dim light filters in from the south. Dusty
 passages run north and east."""),
@@ -65,19 +64,6 @@ while True:
     cmd = input("~~~> Choose an option: [n] North [s] South [e] East [w] West [q] Quit\n" ).lower()
 
     if len(cmd) == 1:
-            # if cmd == 'n':
-            #     player.room = player.room.n_to
-            # elif cmd == 's':
-            #     player.room = player.room.s_to
-            # elif cmd == 'e':
-            #     player.room = player.room.e_to
-            # elif cmd == 'w':
-            #     player.room = player.room.w_to
-            # elif cmd == 'q':
-            #     break
-            #     print("\nThank you for playing! Goodbye!")
-            # else:
-            #     print("\nThis movement is not allowed, please try again.\n")
         if cmd in ["n", "s", "e", "w"]:
             player.travel(cmd)
         elif cmd == "q":

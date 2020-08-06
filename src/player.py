@@ -44,7 +44,6 @@ class Player:
 # view your current inventory
     def view_inventory(self):
         if len(self.inventory) > 0:
-           
             print(f"Items in current inventory {self.inventory}")
         else:
             print("There are currently no items in your inventory.")
